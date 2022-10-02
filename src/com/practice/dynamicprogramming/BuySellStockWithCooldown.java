@@ -2,6 +2,11 @@ package com.practice.dynamicprogramming;
 
 public class BuySellStockWithCooldown {
 
+    /**
+     * If stock already bought, then either sell it and wait next day or wait same day
+     * else wait same day or buy it
+     *
+     */
     private static int recursiveWay(int[] prices, int profit, int i, boolean stockPresent){
         if (i >= prices.length)
             return profit;
